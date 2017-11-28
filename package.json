@@ -1,10 +1,10 @@
 {
   "name": "Test-Open-Shift",
-  "version": "1",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server -a 127.0.0.1 -p 80 -c-1"
+    "start": "http-server -a 127.0.0.1 -p 8080 -c-1"
   },
   "repository": {
     "type": "git",
