@@ -2,6 +2,7 @@
   "name": "Test-Open-Shift",
   "version": "1.0.0",
   "description": "",
+  "main":"start",
   "scripts": {
     "prestart": "npm install",
     "start": "http-server -a 127.0.0.1 -c-1"
