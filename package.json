@@ -45,9 +45,5 @@
     "node-neat": ""
   },
   "author": "Ruggero Trevisiol",
-  "engines": {
-    "node": "7.2.1",
-    "npm": "4.0.5"
-  },
   "license": "MIT"
 }
