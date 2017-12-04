@@ -1,0 +1,83 @@
+/*
+Colore predominante: VERDE
+E 'utilizzato per formattare la grafica principale:
+i titoli e il testo
+la barra di navigazione , i blocchi ed i prodotti incorniciati
+i pulsanti Call to Action
+le immagini
+*/
+$verde_clair: rgb(230, 240, 201);
+$verde_moyen: rgb(150, 202, 18);
+$verde_fonce: rgb(6, 67, 37);
+/*
+Il colore secondario : ROSSO
+E 'riservato per gli elementi relazionali:
+"Accesso ai miei account" pulsante nella barra in alto
+Chiamata all'azione principale sulla home
+i pulsanti di azione, come "Contatti" sulle pagine interne
+*/
+$rosso_clair: rgb(249, 0, 130);
+$rosso_moyen: rgb(227, 0, 112);
+$rosso_fonce: rgb(215, 0, 93);
+/*
+La tinta piatta: GRIGIO
+E 'utilizzato per ammorbidire la sensazione generale:
+testi e titoli
+le aree d'azione
+Sfondi
+immagini secondarie
+*/
+$grigio_clair: rgb(238, 238, 238);
+$grigio_moyen: rgb(153, 153, 153);
+$grigio_fonce: rgb(59, 59, 59);
+
+/*
+Pulsanti
+*/
+//Ombreggiatura Pulsanti
+@mixin ombreggiatura_pulsanti {
+  box-shadow: 5px 5px 5px -2px $grigio_moyen;
+  -webkit-box-shadow: 5px 5px 5px -2px $grigio_moyen;
+  -moz-box-shadow: 5px 5px 5px -2px $grigio_moyen;
+  -o-box-shadow: 5px 5px 5px -2px $grigio_moyen;
+}
+
+@mixin testo_pulsanti {
+  color:rgb(255,255,255);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  padding: 11px 30px;
+}
+
+// Pulsante principale
+@mixin pulsante_azione_principale {
+  $rosso_chiaro :#e71e82;
+  $rosso_scuro:#500f26;
+  border:0px;
+  background: $rosso_chiaro; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to right, $rosso_chiaro, $rosso_scuro); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, $rosso_chiaro, $rosso_scuro); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, $rosso_chiaro, $rosso_scuro); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, $rosso_chiaro, $rosso_scuro); /* Standard syntax */
+  @include testo_pulsanti;
+  @include ombreggiatura_pulsanti;
+}
+
+// Pulsante principale
+@mixin pulsante_call_to_action {
+  background: $verde_moyen; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,$verde_moyen, $verde_fonce); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left,$verde_moyen, $verde_fonce); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left,$verde_moyen, $verde_fonce); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(left,$verde_moyen, $verde_fonce); /* Standard syntax */
+  @include ombreggiatura_pulsanti;
+  @include testo_pulsanti;
+}
+
+@mixin pulsante_annulla {
+  background: rgb(131,130,131);
+  @include testo_pulsanti;
+  @include ombreggiatura_pulsanti;
+}

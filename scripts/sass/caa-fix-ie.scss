@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-set-2017, 10.13.21
+    Author     : ruggerotrevisiol
+*/
+@mixin glyphiconIE {
+  background-image: url(https://preprod-protezionevacanza.ca-assicurazioni.it/tripy-theme/fonts/glyphicons.png)!important;
+  content: " "!important;
+  display: inline-block!important;
+  width: 18px!important;
+  height: 18px!important;
+  background-repeat: no-repeat;
+  // 312 x 2046 originale
+  background-size:208px 1364px!important; 
+}
+#cookie-bar .cb-enable:after,#cookie-bar .cb-policy:after { 
+  @include glyphiconIE;
+  background-position-x: -85px;
+  background-position-y: -866px;
+}
+/* */
+.equalizzatore .pageComposer .row .btn-primary:after {
+  @include glyphiconIE;
+  background-position-x: -85px;
+  background-position-y: -866px;
+}
+/* */
+.equalizzatore .pageComposer .row .btn-annulla:after {
+  @include glyphiconIE;
+  background-position-x: 120px;
+  background-position-x: -85px;
+  background-position-y: -888px;
+}
+header#banner .container .navbar .navbar-toggle:after {
+  @include glyphiconIE;
+}
+.glyphicon:before {
+  @include glyphiconIE;
+}
+.valore.glyphicon.glyphicon-check:before {
+  @include glyphiconIE;
+  background-position-x: -59px;
+  background-position-y: -706px;
+}
+.valore.glyphicon.glyphicon-unchecked:before {
+  @include glyphiconIE;
+  background-position-x: -59px;
+  background-position-y: -766px;
+}
+.glyphicon.glyphicon-pencil:before {
+  @include glyphiconIE;
+  background-position-x: -59px;
+  background-position-y: -723px;
+}
+.equalizzatore .pageComposer div.preventivo table.tabellaPreventivo tr.rowGar .glyphicon.glyphicon-ok:before {
+  @include glyphiconIE;
+  background-position-x: -92px;
+  background-position-y: -232px;
+}
+.equalizzatore .pageComposer div.preventivo table.tabellaPreventivo tr.rowGar .glyphicon.glyphicon-remove:before {
+  @include glyphiconIE;
+  background-position-x: -92px;
+  background-position-y: -208px;
+}
